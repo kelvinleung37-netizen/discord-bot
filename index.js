@@ -2,7 +2,7 @@
 require('dotenv').config();
 const { Client, GatewayIntentBits, Events, Collection } = require('discord.js');
 
-const TOKEN = '';
+const TOKEN = process.env.DISCORD_TOKEN;
 if (!TOKEN) {
 	console.error('');
 	process.exit(1);
